@@ -17,16 +17,12 @@ $(() => {
     billsPer = parseFloat($("#bills-budget-input").val()) / 100;
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
+  $("#add-expense-button").click(addButton);
 });
 
-// var totBudget = $("#total-budget-input").value
-// var entertainmentPer = $("#entertainment-budget-input").value /100;
-// var foodPer =$("#food-budget-input").value / 100;
-// var clothingPer = $("#clothing-budget-input").value / 100;
-// var billsPer = $("#bills-budget-input").value / 100;
-
-
-
 function addButton(category, description, amount) {
+  var category = $("#category-expense-select").val();
+  var description = $("#expense-description-input").val();
+  var amount = parseFloat($("#expense-amount-input").val());
   myBudget[category].addExpense(description, amount);
 }

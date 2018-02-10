@@ -28,3 +28,10 @@ Expense Items
 - description
 
 *Universal Function- addNewExpense > if entertainment, create new expense class instance and add to that category array.*
+
+Next time on JS with Mike and Emily:
+- styling
+  - the initial start modal and expense modal
+  - add functionality to create budget button to hide start modal and display current budget scenario, main screen, etc
+  - add button to main screen to open 'add an expense' modal
+  - add functionality to add expense modal to hide add expense modal on click of button + update main screen
