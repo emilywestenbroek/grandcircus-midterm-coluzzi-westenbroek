@@ -1,10 +1,10 @@
 class Budget{
-  constructor(totBudget, remainder, entertainment, food , clothing, bills){
+  constructor(totBudget, entertainment, food , clothing, bills){
     this.totBudget = totBudget;
-    this.remainder = remainder;
-    this.entertainmentPer = enterainment;
-    this.foodPer = food;
-    this.clothingPer = clothing;
-    this.billsPer = bills;
+    this.remainder = totBudget;
+    this.entertainment = new Catergory(totBudget * entertainment);
+    this.food = new Catergory(totBudget * food);
+    this.clothing = new Catergory(totBudget * clothing);
+    this.bills = new Catergory(totBudget * bills);
   }
 }
