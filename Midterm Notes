@@ -1,0 +1,30 @@
+Budget Buddy State
+
+At any given moment
+- the program would have the user's Budget
+- it would have a display of the remaining budget
+- a list of each budget item
+- have the percent of the budget that each category represents
+
+Budget
+*Is holder for initial info that user enters.*
+- total budget
+- remainder of total budget
+- percent of total budget that each category represents
+
+Categories
+* build a function
+that adds up total of current expenses in a given category, assign that total to a
+variable and subtract that variable from the initial category total*
+- initial Budget *is set by user initially *
+- current category total
+- *EXTRA - percentage of category total that has been reached
+- expense array *updates when expense item is entered*
+
+Expense Items
+*User enters expense. Current remaining budget of related category updates*
+- category
+- amount
+- description
+
+*Universal Function- addNewExpense > if entertainment, create new expense class instance and add to that category array.*
