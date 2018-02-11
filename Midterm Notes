@@ -31,7 +31,7 @@ Expense Items
 
 Next time on JS with Mike and Emily:
 - styling
-  - the initial start modal and expense modal
-  - add functionality to create budget button to hide start modal and display current budget scenario, main screen, etc
-  - add button to main screen to open 'add an expense' modal
-  - add functionality to add expense modal to hide add expense modal on click of button + update main screen
+  - the initial start modal and expense modal - CHECK
+  - add functionality to create budget button to hide start modal and display current budget scenario, main screen, etc - CHECK
+  - add button to main screen to open 'add an expense' modal -CHECK
+  - add functionality to add expense modal to hide add expense modal on click of button + update main screen - CHECK

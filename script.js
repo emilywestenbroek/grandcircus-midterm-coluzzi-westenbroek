@@ -19,7 +19,7 @@ $(() => {
 
   $("#add-expense-button").click(function() {
     $("#expense-modal-container").hide();
-    $("#main-screen-container").show();
+    // $("#main-screen-container").show();
   });
 
   $("#create-budget-button").click(function() {
@@ -34,7 +34,7 @@ $(() => {
 
   $("#new-expense-button").click(function() {
     $("#expense-modal-container").show();
-    $("#main-screen-container").hide();
+    // $("#main-screen-container").hide();
   });
 });
 
