@@ -1,0 +1,55 @@
+h1, h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#start-input-container {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+}
+
+#expense-modal-container{
+     width: 90%;
+     height: 350px;
+     margin: 0 auto;
+     border: solid;
+     border-radius: 5px;
+     border-color: #A4D555;
+     border-width: 5px;
+     max-width: 400px;
+     min-width: 275px;
+   }
+
+#expense-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#expense-input-container > input {
+  height: 50px;
+  width: 200px;
+  border: solid 1px #dadada;
+  margin: 10px;
+}
+
+#expense-input-container > select {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+}
+
+#add-expense-button {
+  margin: 10px;
+  background-color: #A4D555;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.modal-title {
+  margin: 10px;
+}
+
+@media(min-device-width : 414px) and (max-device-width : 736px) {
+
+}
