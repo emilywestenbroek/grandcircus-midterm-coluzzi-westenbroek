@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
 	<div id="start-container">
 		<div id="start-title-container">
 			<h1 class="modal-title">Create a Budget!</h1>
@@ -33,6 +34,7 @@
 		<div id="expense-input-container">
 			<select id="category-expense-select">
 				/* add default selector and add JS contingency for when user doesn't choose a category  */
+				<option value="">Please Select a Category</option>
 				<option value="entertainment">Entertainment</option>
 				<option value="food">Food</option>
 				<option value="clothing">Clothing</option>
@@ -45,7 +47,7 @@
 			<button id="add-expense-button">Add Expense</button>
 		</div>
 	</div>
-
+<div id="modal-blur">
 	<div id="load-screen-container">
 		<!-- Title/header for load page? -->
 		<button id="create-budget-button">Create Your Budget</button>
@@ -59,10 +61,18 @@
 		<div id="current-budget-container">
 			<h2>Your Current Budget</h2>
 			<div id="budget-bar-container">
-				<div id="entertainment-bar"></div>
-				<div id="food-bar"></div>
-				<div id="clothing-bar"></div>
-				<div id="bills-bar"></div>
+				<div id="entertainment-bar">
+					<div id="entertainment-bar-progress"></div>
+				</div>
+				<div id="food-bar">
+					<div id="food-bar-progress"></div>
+				</div>
+				<div id="clothing-bar">
+					<div id="clothing-bar-progress"></div>
+				</div>
+				<div id="bills-bar">
+					<div id="bills-bar-progress"></div>
+				</div>
 			</div>
 		</div>
 		<div id="add-expense-container">
@@ -74,5 +84,6 @@
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
