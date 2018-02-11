@@ -32,3 +32,18 @@ $(document).ready(function() {
   $("#expense-modal-container").hide();
   $("#main-screen-container").hide();
 });
+
+$("#create-budget-button").click(function() {
+  $("#start-container").show();
+  $("#load-screen-container").hide();
+})
+
+$("#initialize-budget-button").click(function() {
+  $("#start-container").hide();
+  $("#main-screen-container").show();
+})
+
+$("#new-expense-button").click(function() {
+  $("#expense-modal-container").show();
+  // $("#main-screen-container").hide();
+})
