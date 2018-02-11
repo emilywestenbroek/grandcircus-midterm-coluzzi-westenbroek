@@ -26,3 +26,9 @@ function addButton(category, description, amount) {
   var amount = parseFloat($("#expense-amount-input").val());
   myBudget[category].addExpense(description, amount);
 }
+
+$(document).ready(function() {
+  $("#start-container").hide();
+  $("#expense-modal-container").hide();
+  $("#main-screen-container").hide();
+});
