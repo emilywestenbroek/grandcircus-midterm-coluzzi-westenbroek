@@ -14,12 +14,12 @@ $(() => {
     billsPer = parseFloat($("#bills-budget-input").val()) / 100;
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
-  
+
   $("#add-expense-button").click(addButton);
 
   $("#add-expense-button").click(function() {
     $("#expense-modal-container").hide();
-    // $("#main-screen-container").show();
+    $("#main-screen-container").show();
   });
 
   $("#create-budget-button").click(function() {
@@ -34,7 +34,7 @@ $(() => {
 
   $("#new-expense-button").click(function() {
     $("#expense-modal-container").show();
-    // $("#main-screen-container").hide();
+    $("#main-screen-container").hide();
   });
 });
 
