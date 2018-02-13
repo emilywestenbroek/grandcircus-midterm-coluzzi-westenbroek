@@ -8,15 +8,13 @@ var myBudget;
 $(() => {
   $("#initialize-budget-button").click(function() {
     totBudget = parseFloat($("#total-budget-input").val());
-    console.log(totBudget);
     entertainmentPer = parseFloat($("#entertainment-budget-input").val()) /100;
-    console.log(entertainmentPer);
     foodPer = parseFloat($("#food-budget-input").val()) / 100;
-    console.log(foodPer);
     clothingPer = parseFloat($("#clothing-budget-input").val()) / 100;
     billsPer = parseFloat($("#bills-budget-input").val()) / 100;
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
+
   $("#add-expense-button").click(addButton);
 
   $("#add-expense-button").click(function() {
