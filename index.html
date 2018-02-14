@@ -30,11 +30,12 @@
 	<div id="expense-modal-container">
 		<div>
 			<h1 class="modal-title">New Expense</h1>
+			<h4 id="expense-message-container">Please Enter Your Expense Details Below</h4>
 		</div>
 		<div id="expense-input-container">
 			<select id="category-expense-select">
 				/* add default selector and add JS contingency for when user doesn't choose a category  */
-				<option value="">Please Select a Category</option>
+				<option value="Please Select a Category">Please Select a Category</option>
 				<option value="entertainment">Entertainment</option>
 				<option value="food">Food</option>
 				<option value="clothing">Clothing</option>
@@ -76,6 +77,7 @@
 			</div>
 		</div>
 		<div id="add-expense-container">
+			<p
 			<button id="new-expense-button">Add Expense</button>
 		</div>
 		<div id="recent-transactions-container">

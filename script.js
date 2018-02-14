@@ -15,15 +15,9 @@ $(() => {
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
 
-  $("#add-expense-button").click(addButton);
-
-  $("#add-expense-button").click(function() {
-    $("#expense-modal-container").hide();
-    // $("#main-screen-container").show();
-  });
-
   $("#create-budget-button").click(function() {
     $("#start-container").show();
+    $("#add-expense-container").show();
     $("#load-screen-container").hide();
   });
 
@@ -32,17 +26,37 @@ $(() => {
     $("#main-screen-container").show();
   });
 
-  $("#new-expense-button").click(function() {
-    $("#expense-modal-container").show();
+  // $("#new-expense-button").click(function() {
+    // $("#expense-modal-container").show();
     // $("#main-screen-container").hide();
   });
 });
+
+function expenseInputReset() {
+  $("#category-expense-select").val("Please Select a Category");
+  $("#expense-description-input").val("");
+  $("#expense-amount-input").val("");
+}
 
 function addButton(category, description, amount) {
   var category = $("#category-expense-select").val();
   var description = $("#expense-description-input").val();
   var amount = parseFloat($("#expense-amount-input").val());
-  myBudget[category].addExpense(description, amount);
+  if (category !== "Please Select a Category") {
+    myBudget[category].addExpense(description, amount);
+    $("#expense-message-container").text(`Your "${description}" expense has been added.`);
+    expenseInputReset();
+  } else {
+    $("#expense-message-container").text("Sorry, you haven't chosen a category.");
+  }
+
+
+  // if (category === "Please Select a Category") {
+  //   $("#expense-error-message").show();
+  //   debugger;
+  // } else {
+  //   myBudget[category].addExpense(description, amount);
+  // }
 }
 
 $(document).ready(function() {
