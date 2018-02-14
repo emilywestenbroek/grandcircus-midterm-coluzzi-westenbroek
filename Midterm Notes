@@ -36,10 +36,22 @@ Next time on JS with Mike and Emily:
   - add button to main screen to open 'add an expense' modal -CHECK
   - add functionality to add expense modal to hide add expense modal on click of button + update main screen - CHECK
 
-  - finish styling in general - mobile first
-  - Tuesday - get bars working and responsive to changes in Budget
-  - Get remaining budget to change in response to added expenses
-  - Create contingencies for when user does things the app doesn't intend
-  - Get expense list to populate
-  - Inputs should be able to remove dollar signs, and automatically include the $ sign upon load of modal
-  
+  - finish styling in general - mobile first - NOT-YET
+  - Tuesday - get bars working and responsive to changes in Budget - NOT-YET
+  - Get remaining budget to change in response to added expenses - CHECK
+  - Create contingencies for when user does things the app doesn't intend - CHECK
+  - Get expense list to populate - NOT-YET
+  - Inputs should be able to remove dollar signs, and automatically include the 
+    $ sign upon load of modal
+
+
+  - Add validation rules/contingencies for:
+    - going over budget on category or the whole
+    - entering item other than number into amount Inputs
+    - not entering anything into amount Inputs
+  - Add $ to expense and total budget inputs
+  - add % to budget inputs
+  - budget bars display
+  - viewing expense list
+    - view expenses by category and,
+    - also complete list of expenses
