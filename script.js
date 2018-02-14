@@ -15,20 +15,12 @@ $(() => {
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
 
-  $("#create-budget-button").click(function() {
-    $("#start-container").show();
-    $("#add-expense-container").show();
-    $("#load-screen-container").hide();
-  });
+  $("#main-screen-container").hide();
 
   $("#initialize-budget-button").click(function() {
     $("#start-container").hide();
     $("#main-screen-container").show();
-  });
-
-  // $("#new-expense-button").click(function() {
-    // $("#expense-modal-container").show();
-    // $("#main-screen-container").hide();
+    $("#expense-container").show();
   });
 });
 
@@ -49,18 +41,9 @@ function addButton(category, description, amount) {
   } else {
     $("#expense-message-container").text("Sorry, you haven't chosen a category.");
   }
-
-
-  // if (category === "Please Select a Category") {
-  //   $("#expense-error-message").show();
-  //   debugger;
-  // } else {
-  //   myBudget[category].addExpense(description, amount);
-  // }
 }
 
 $(document).ready(function() {
-  $("#start-container").hide();
-  $("#expense-modal-container").hide();
+  $("#expense-container").hide();
   $("#main-screen-container").hide();
 });

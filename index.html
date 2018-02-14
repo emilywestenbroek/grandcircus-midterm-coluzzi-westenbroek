@@ -17,17 +17,22 @@
 			<h1 class="modal-title">Create a Budget!</h1>
 		</div>
 		<div id="start-input-container">
-			<input id="total-budget-input" type="text" placeholder="2000.00">
-			<input id="entertainment-budget-input" type="text" value="25">
-			<input id="food-budget-input" type="text" value="25">
-			<input id="clothing-budget-input" type="text" value="25">
-			<input id="bills-budget-input" type="text" value="25">
-		</div>
-		<div id="start-button-container">
-			<button id="initialize-budget-button"type="button" name="button">Create Budget!</button>
+			<div id="name-and-total-container">
+				<label for="name-input">Name<input id="name-input" type="text" placeholder="John Doe"></label>
+				<label for="total-budget-input">Total Monthly Budget<input id="total-budget-input" type="text" placeholder="2000.00"></label>
+			</div>
+			<div id="percent-input-container">
+				<label for="entertainment-budget-input">Entertainment<input id="entertainment-budget-input" type="text" value="25"></label>
+				<label for="food-budget-input">Food<input id="food-budget-input" type="text" value="25"></label>
+				<label for="clothing-budget-input">Clothing<input id="clothing-budget-input" type="text" value="25"></label>
+				<label for="bills-budget-input">Bills<input id="bills-budget-input" type="text" value="25"></label>
+			</div>
+			<div id="start-button-container">
+				<button id="initialize-budget-button"type="button" name="button">Create Budget!</button>
+			</div>
 		</div>
 	</div>
-	<div id="expense-modal-container">
+	<div id="expense-container">
 		<div>
 			<h1 class="modal-title">New Expense</h1>
 			<h4 id="expense-message-container">Please Enter Your Expense Details Below</h4>
@@ -49,12 +54,6 @@
 		</div>
 	</div>
 <div id="modal-blur">
-	<div id="load-screen-container">
-		<!-- Title/header for load page? -->
-		<button id="create-budget-button">Create Your Budget</button>
-	</div>
-	<!-- Current budget, recent transactions, and add expense button will be
-	hidden upon first load. They will appear after new budget is added. -->
 	<div id="main-screen-container">
 		<div id="welcome-container">
 			<h1>Welcome, <span id="username-display"></span></h1>
