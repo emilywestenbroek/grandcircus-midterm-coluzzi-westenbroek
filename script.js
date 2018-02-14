@@ -43,9 +43,9 @@ $(() => {
 
 function calculateBudgetBar(){
   $("#entertainment-bar").css("width",(`${entertainmentPer * 100}%`));
-  $("#food-bar").css("width",`${entertainmentPer * 100}%`);
-  $("#clothing-bar").css("width",`${entertainmentPer * 100}%`);
-  $("#bills-bar").css("width",`${entertainmentPer * 100}%`);
+  $("#food-bar").css("width",`${foodPer * 100}%`);
+  $("#clothing-bar").css("width",`${clothingPer * 100}%`);
+  $("#bills-bar").css("width",`${billsPer * 100}%`);
 
   $("#entertainment-bar-progress").css("width",`${(myBudget.entertainment.currentBudget / myBudget.entertainment.intBudget) * 100}%`);
   $("#food-bar-progess").css("width",`${(myBudget.food.currentBudget / myBudget.food.intBudget) * 100}%`);
