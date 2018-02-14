@@ -15,6 +15,8 @@ $(() => {
     myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
   });
 
+  $("#add-expense-button").click(addButton);
+
   $("#main-screen-container").hide();
 
   $("#initialize-budget-button").click(function() {
