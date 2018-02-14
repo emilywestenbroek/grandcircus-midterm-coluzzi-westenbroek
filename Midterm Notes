@@ -27,21 +27,24 @@ Expense Items
 - amount
 - description
 
-*Universal Function- addNewExpense > if entertainment, create new expense class instance and add to that category array.*
+*Universal Function- addNewExpense > if entertainment, create new expense class
+instance and add to that category array.*
 
 Next time on JS with Mike and Emily:
 - styling
   - the initial start modal and expense modal - CHECK
-  - add functionality to create budget button to hide start modal and display current budget scenario, main screen, etc - CHECK
+  - add functionality to create budget button to hide start modal and
+  display current budget scenario, main screen, etc - CHECK
   - add button to main screen to open 'add an expense' modal -CHECK
-  - add functionality to add expense modal to hide add expense modal on click of button + update main screen - CHECK
+  - add functionality to add expense modal to hide add expense modal on click
+  of button + update main screen - CHECK
 
   - finish styling in general - mobile first - NOT-YET
   - Tuesday - get bars working and responsive to changes in Budget - NOT-YET
   - Get remaining budget to change in response to added expenses - CHECK
   - Create contingencies for when user does things the app doesn't intend - CHECK
   - Get expense list to populate - NOT-YET
-  - Inputs should be able to remove dollar signs, and automatically include the 
+  - Inputs should be able to remove dollar signs, and automatically include the
     $ sign upon load of modal
 
 

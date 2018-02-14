@@ -64,7 +64,7 @@ function addButton(category, description, amount) {
   var description = $("#expense-description-input").val();
   var amount = parseFloat($("#expense-amount-input").val());
   if (category !== "Please Select a Category") {
-    myBudget[category].addExpense(description, amount);
+    myBudget[category].addExpense(category, description, amount);
     myBudget.calRemainingBudget();
     $("#message-container").text(`Your "${description}" expense has been added.`);
     expenseInputReset();

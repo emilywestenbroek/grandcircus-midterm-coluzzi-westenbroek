@@ -11,8 +11,9 @@ class Category {
     }
     this.currentBudget = this.intBudget - this.currentTotalExpense;
   }
-  addExpense(description, amount) { // variables will be pulled from user input
-    this.expenses.push(new Expense(description, amount));
+  addExpense(category, description, amount) { // variables will be pulled from user input
+    this.expenses.push(new Expense(category, description, amount));
     this.calCategoryBudget();
+    $("#recent-expense-list").append(`<li> ${amount} - ${category} - ${description}</li>`);
   }
 }
