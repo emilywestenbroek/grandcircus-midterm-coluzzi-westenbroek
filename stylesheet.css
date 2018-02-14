@@ -128,6 +128,32 @@ input, select, option {
   border-radius: 5px;
 }
 
+#budget-bar-container{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#entertainment-bar {
+  background-color: #4CDEF5;
+  height: 100px;
+}
+
+#food-bar {
+  background-color: #A4D555;
+  height: 100px;
+}
+
+#clothing-bar {
+  background-color: #841983;
+  height: 100px;
+}
+
+#bills-bar {
+  background-color: #FF5992;
+  height: 100px;
+}
+
 .modal-title {
   margin: 10px;
 }

@@ -25,6 +25,7 @@ $(() => {
       $("#expense-container").show();
       $("#username-display").text(`${username}`);
       $("#current-budget").text(`${myBudget.remainder}/${myBudget.totBudget}`);
+      calculateBudgetBar();
     }
   });
 
@@ -39,6 +40,18 @@ $(() => {
   //   $("#username-display").text(`${username}`);
   // });
 });
+
+function calculateBudgetBar(){
+  $("#entertainment-bar").css("width",(`${entertainmentPer * 100}%`));
+  $("#food-bar").css("width",`${entertainmentPer * 100}%`);
+  $("#clothing-bar").css("width",`${entertainmentPer * 100}%`);
+  $("#bills-bar").css("width",`${entertainmentPer * 100}%`);
+
+  $("#entertainment-bar-progress").css("width",`${(myBudget.entertainment.currentBudget / myBudget.entertainment.intBudget) * 100}%`);
+  $("#food-bar-progess").css("width",`${(myBudget.food.currentBudget / myBudget.food.intBudget) * 100}%`);
+  $("#clothing-bar-progress").css("width",`${(myBudget.clothing.currentBudget / myBudget.clothing.intBudget) * 100}%`);
+  $("#bills-bar-progress").css("width",`${(myBudget.bills.currentBudget / myBudget.bills.intBudget) * 100}%`);
+}
 
 function expenseInputReset() {
   $("#category-expense-select").val("Please Select a Category");
