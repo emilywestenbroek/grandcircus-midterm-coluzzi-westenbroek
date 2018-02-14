@@ -4,6 +4,7 @@ var foodPer;
 var clothingPer;
 var billsPer;
 var myBudget;
+var username;
 
 $(() => {
   $("#initialize-budget-button").click(function() {
@@ -12,18 +13,31 @@ $(() => {
     foodPer = parseFloat($("#food-budget-input").val()) / 100;
     clothingPer = parseFloat($("#clothing-budget-input").val()) / 100;
     billsPer = parseFloat($("#bills-budget-input").val()) / 100;
-    myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
+    checkPercentage = entertainmentPer + foodPer + clothingPer + billsPer;
+    username = $("#name-input").val();
+    if (checkPercentage > 1) {
+      $("#message-container").show();
+      $("#message-container").text("It looks like you've exceeded 100%.");
+    } else {
+      myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
+      $("#start-container").hide();
+      $("#main-screen-container").show();
+      $("#expense-container").show();
+      $("#username-display").text(`${username}`);
+      $("#current-budget").text(`${myBudget.remainder}/${myBudget.totBudget}`);
+    }
   });
 
   $("#add-expense-button").click(addButton);
 
   $("#main-screen-container").hide();
-
-  $("#initialize-budget-button").click(function() {
-    $("#start-container").hide();
-    $("#main-screen-container").show();
-    $("#expense-container").show();
-  });
+  //
+  // $("#initialize-budget-button").click(function() {
+  //   $("#start-container").hide();
+  //   $("#main-screen-container").show();
+  //   $("#expense-container").show();
+  //   $("#username-display").text(`${username}`);
+  // });
 });
 
 function expenseInputReset() {
@@ -38,14 +52,16 @@ function addButton(category, description, amount) {
   var amount = parseFloat($("#expense-amount-input").val());
   if (category !== "Please Select a Category") {
     myBudget[category].addExpense(description, amount);
-    $("#expense-message-container").text(`Your "${description}" expense has been added.`);
+    myBudget.calRemainingBudget();
+    $("#message-container").text(`Your "${description}" expense has been added.`);
     expenseInputReset();
   } else {
-    $("#expense-message-container").text("Sorry, you haven't chosen a category.");
+    $("#message-container").text("Sorry, you haven't chosen a category.");
   }
 }
 
 $(document).ready(function() {
   $("#expense-container").hide();
   $("#main-screen-container").hide();
+  $("#message-container").hide();
 });

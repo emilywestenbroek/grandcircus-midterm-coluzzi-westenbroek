@@ -7,4 +7,9 @@ class Budget{
     this.clothing = new Category(totBudget * clothing);
     this.bills = new Category(totBudget * bills);
   }
+  calRemainingBudget() {
+    this.remainder = this.entertainment.currentBudget + this.food.currentBudget
+    + this.clothing.currentBudget + this.bills.currentBudget;
+    $("#current-budget").text(`${this.remainder}/${this.totBudget}`);
+  }
 }
