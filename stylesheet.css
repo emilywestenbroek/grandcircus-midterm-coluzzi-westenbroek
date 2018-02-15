@@ -133,23 +133,42 @@ input, select, option {
   display: flex;
   flex-direction: row;
 }
-
 #entertainment-bar {
-  background-color: #4CDEF5;
+  border: solid 5px #4CDEF5;
   height: 100px;
 }
 
 #food-bar {
-  background-color: #A4D555;
+  border: solid 5px #A4D555;
   height: 100px;
 }
 
 #clothing-bar {
+  border: solid 5px #841983;
+  height: 100px;
+}
+
+#bills-bar{
+  border: solid 5px #FF5992;
+  height: 100px;
+}
+
+#entertainment-bar-progress {
+  background-color: #4CDEF5;
+  height: 100px;
+}
+
+#food-bar-progress {
+  background-color: #A4D555;
+  height: 100px;
+}
+
+#clothing-bar-progress {
   background-color: #841983;
   height: 100px;
 }
 
-#bills-bar {
+#bills-bar-progress {
   background-color: #FF5992;
   height: 100px;
 }

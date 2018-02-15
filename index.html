@@ -35,25 +35,6 @@
 			</div>
 		</div>
 	</section>
-	<section id="expense-container">
-		<div>
-			<h1 class="modal-title">New Expense</h1>
-		</div>
-		<div id="expense-input-container">
-			<select id="category-expense-select">
-				<option value="Please Select a Category">Please Select a Category</option>
-				<option value="entertainment">Entertainment</option>
-				<option value="food">Food</option>
-				<option value="clothing">Clothing</option>
-				<option value="bills">Bills</option>
-			</select>
-			<input id="expense-description-input" type="text" placeholder="Enter a description here">
-			<input id="expense-amount-input" type="text" placeholder="25.00">
-		</div>
-		<div>
-			<button id="add-expense-button">Add Expense</button>
-		</div>
-	</section>
 	<section id="main-screen-container">
 		<div id="current-budget-container">
 			<h2>Your Current Budget</h2>
@@ -75,11 +56,26 @@
 				</div>
 			</div>
 		</div>
-		<div id="add-expense-container">
-			<p
-			<button id="new-expense-button">Add Expense</button>
-		</div>
-		<div id="recent-expense-container">
+		<section id="expense-container">
+			<div>
+				<h1 class="modal-title">New Expense</h1>
+			</div>
+			<div id="expense-input-container">
+				<select id="category-expense-select">
+					<option value="Please Select a Category">Please Select a Category</option>
+					<option value="entertainment">Entertainment</option>
+					<option value="food">Food</option>
+					<option value="clothing">Clothing</option>
+					<option value="bills">Bills</option>
+				</select>
+				<input id="expense-description-input" type="text" placeholder="Enter a description here">
+				<input id="expense-amount-input" type="text" placeholder="25.00">
+			</div>
+			<div>
+				<button id="add-expense-button">Add Expense</button>
+			</div>
+		</section>
+		<div id="recent-transactions-container">
 			<h2>Recent Transactions</h2>
 			<div>
 				<!-- amount, desciption, category -->
