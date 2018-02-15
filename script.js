@@ -48,7 +48,7 @@ function calculateBudgetBar(){
   $("#bills-bar").css("width",`${billsPer * 100}%`);
 
   $("#entertainment-bar-progress").css("width",`${(myBudget.entertainment.currentBudget / myBudget.entertainment.intBudget) * 100}%`);
-  $("#food-bar-progess").css("width",`${(myBudget.food.currentBudget / myBudget.food.intBudget) * 100}%`);
+  $("#food-bar-progress").css("width",`${(myBudget.food.currentBudget / myBudget.food.intBudget) * 100}%`);
   $("#clothing-bar-progress").css("width",`${(myBudget.clothing.currentBudget / myBudget.clothing.intBudget) * 100}%`);
   $("#bills-bar-progress").css("width",`${(myBudget.bills.currentBudget / myBudget.bills.intBudget) * 100}%`);
 }
@@ -68,6 +68,7 @@ function addButton(category, description, amount) {
     myBudget.calRemainingBudget();
     $("#message-container").text(`Your "${description}" expense has been added.`);
     expenseInputReset();
+    calculateBudgetBar();
   } else {
     $("#message-container").text("Sorry, you haven't chosen a category.");
   }

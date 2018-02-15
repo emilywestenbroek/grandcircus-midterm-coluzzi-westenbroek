@@ -15,5 +15,5 @@ class Budget{
   }
   // for() {  ...for loop to create array of all expenses -- goal to show list on site
   // this.clothing.expenses.[1];
-  }
+  // }
 }
