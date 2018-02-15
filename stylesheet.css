@@ -2,8 +2,19 @@ h1, h2 {
   font-family: "Ubuntu", sans-serif;
 }
 
-input, select, option {
+input, select, option, label, #current-budget, #recent-transactions-container {
   font-family: "Open Sans", sans-serif;
+}
+
+input {
+  margin: 10px;
+}
+
+#welcome-container, #start-title-container,
+#current-budget-headline, #recent-transactions-container,
+#current-display-container {
+  display: flex;
+  justify-content: center;
 }
 
 #start-input-container {
@@ -12,35 +23,24 @@ input, select, option {
   margin: 10px;
 }
 
-#expense-modal-container{
+#expense-container{
   display: none;
-  position: absolute;
   background-color: white;
   width: 80%;
   height: 350px;
-  margin: -175px 0 0 -40%;
-  left: 50%;
-  top: 50%;
+  margin: 50px auto;
   border: solid;
   border-radius: 5px;
   border-color: #A4D555;
   border-width: 5px;
   max-width: 80%;
   min-width: 275px;
-  z-index: 9999;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 #expense-error-message {
   display: none;
 }
-
-/* #modal-blur {
-  filter: blur(8px);
-  width: 100%;
-  height: 100%;
-  z-index: 9997;
-} */
 
 #expense-input-container {
   display: flex;
@@ -72,6 +72,7 @@ input, select, option {
   height: 100px;
   display: flex;
   flex-direction: row;
+  margin: 50px 10%;
 }
 #entertainment-bar {
   border: solid 5px #4CDEF5;
@@ -112,8 +113,4 @@ input, select, option {
 #bills-bar-progress {
   background-color: #FF5992;
   height: 100px;
-}
-
-.modal-title {
-  margin: 10px;
 }

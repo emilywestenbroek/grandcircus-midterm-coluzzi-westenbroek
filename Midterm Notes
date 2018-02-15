@@ -58,3 +58,7 @@ Next time on JS with Mike and Emily:
   - viewing expense list
     - view expenses by category and, - MAYBE
     - also complete list of expenses - CHECK
+
+
+- Update current budget fraction to say something like "you have BLANK remaining
+of your BLANK monthly budget"
