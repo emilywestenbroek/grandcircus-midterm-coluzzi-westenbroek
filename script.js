@@ -24,7 +24,7 @@ $(() => {
       $("#main-screen-container").show();
       $("#expense-container").show();
       $("#username-display").text(`${username}`);
-      $("#current-budget").text(`${myBudget.remainder}/${myBudget.totBudget}`);
+      $("#current-budget").text(`$${myBudget.remainder}/$${myBudget.totBudget}`);
       calculateBudgetBar();
     }
   });
