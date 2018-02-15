@@ -10,18 +10,18 @@ input {
   margin: 10px;
 }
 
-#welcome-container, #start-title-container,
-#current-budget-headline, #recent-transactions-container,
-#current-display-container {
+#welcome-container, #current-budget-headline,
+#current-display-container, #start-title-container,
+#start-button-container, #recent-transactions-container{
   display: flex;
   justify-content: center;
 }
 
 #start-input-container {
   height: 400px;
-  width: 100%;
-  margin: 10px;
+  margin: 10px 10%;
 }
+
 
 #expense-container{
   display: none;
@@ -38,6 +38,7 @@ input {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
+/* Should this be #message-container? */
 #expense-error-message {
   display: none;
 }
@@ -60,7 +61,7 @@ input {
   margin: 10px;
 }
 
-#add-expense-button {
+#add-expense-button, #initialize-budget-button {
   margin: 10px;
   background-color: #A4D555;
   height: 50px;
