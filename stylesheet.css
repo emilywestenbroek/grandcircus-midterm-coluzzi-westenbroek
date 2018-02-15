@@ -8,6 +8,7 @@ input, select, option, label, #current-budget, #recent-transactions-container {
 
 input {
   margin: 10px;
+  padding: 10px;
 }
 
 #welcome-container, #current-budget-headline,
@@ -43,26 +44,35 @@ input {
   display: none;
 }
 
-#expense-input-container {
+#expense-headline-container, #expense-input-container {
   display: flex;
+  justify-content: center;
+}
+
+#expense-input-container {
   flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 #expense-input-container > input {
   height: 50px;
   width: 200px;
   border: solid 1px #dadada;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 #expense-input-container > select {
   height: 50px;
   width: 200px;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 #add-expense-button, #initialize-budget-button {
-  margin: 10px;
+  margin: 10px auto;
   background-color: #A4D555;
   height: 50px;
   width: 150px;
