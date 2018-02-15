@@ -8,11 +8,11 @@ var username;
 
 $(() => {
   $("#initialize-budget-button").click(function() {
-    totBudget = parseFloat($("#total-budget-input").val());
-    entertainmentPer = parseFloat($("#entertainment-budget-input").val()) /100;
-    foodPer = parseFloat($("#food-budget-input").val()) / 100;
-    clothingPer = parseFloat($("#clothing-budget-input").val()) / 100;
-    billsPer = parseFloat($("#bills-budget-input").val()) / 100;
+    totBudget = parseFloat($("#total-budget-input").val().replace(/[^0-9.-]+/g, ''));
+    entertainmentPer = parseFloat($("#entertainment-budget-input").val().replace(/[^0-9.-]+/g, '')) /100;
+    foodPer = parseFloat($("#food-budget-input").val().replace(/[^0-9.-]+/g, '')) / 100;
+    clothingPer = parseFloat($("#clothing-budget-input").val().replace(/[^0-9.-]+/g, '')) / 100;
+    billsPer = parseFloat($("#bills-budget-input").val().replace(/[^0-9.-]+/g, '')) / 100;
     checkPercentage = entertainmentPer + foodPer + clothingPer + billsPer;
     username = $("#name-input").val();
     if (checkPercentage > 1) {
