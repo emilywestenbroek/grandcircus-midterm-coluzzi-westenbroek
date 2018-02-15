@@ -59,7 +59,7 @@ input {
 }
 
 #expense-input-container > input {
-  height: 50px;
+  height: 30px;
   width: 200px;
   border: solid 1px #dadada;
   margin: 10px auto;
