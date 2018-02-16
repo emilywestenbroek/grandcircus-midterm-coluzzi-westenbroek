@@ -10,7 +10,7 @@
 	<script src="script.js" type=""="text/javascript"></script>
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="mobile.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0; user-scalable=false;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
 	<div id="welcome-container">
@@ -22,19 +22,18 @@
 			<h1 class="new-budget-headline">Create a Budget!</h1>
 		</div>
 		<!-- <div id="start-input-container"> -->
-			<div id="name-and-total-container">
-				<label for="name-input">Name<input id="name-input" type="text" placeholder="John Doe"></label>
-				<label for="total-budget-input">Monthly Budget<input id="total-budget-input" type="text" placeholder="2000.00"></label>
-			</div>
-			<div id="percent-input-one">
-				<label for="entertainment-budget-input">Entertainment</br>
-					<input id="entertainment-budget-input" type="text" value="25"></label>
-				<label for="clothing-budget-input">Clothing<input id="clothing-budget-input" type="text" value="25"></label>
-			</div>
-			<div id="percent-input-two">
-				<label for="food-budget-input">Food<input id="food-budget-input" type="text" value="25"></label>
-				<label for="bills-budget-input">Bills<input id="bills-budget-input" type="text" value="25"></label>
-			</div>
+		<div id="name-and-total-container">
+			<label for="name-input">Name<input id="name-input" type="text" placeholder="John Doe"></label>
+			<label for="total-budget-input">Monthly Budget<input id="total-budget-input" type="text" placeholder="$2000.00"></label>
+		</div>
+		<div id="percent-input-one">
+			<label for="entertainment-budget-input">Entertainment<input id="entertainment-budget-input" type="text" placeholder="25%" value=""></label>
+			<label for="clothing-budget-input">Clothing<input id="clothing-budget-input" type="text" placeholder="25%" value=""></label>
+		</div>
+		<div id="percent-input-two">
+			<label for="food-budget-input">Food<input id="food-budget-input" type="text" placeholder="25%" value=""></label>
+			<label for="bills-budget-input">Bills<input id="bills-budget-input" type="text" placeholder="25%" value=""></label>
+		</div>
 		<!-- </div> -->
 		<div id="start-button-container">
 			<button id="initialize-budget-button"type="button" name="button">Create Budget!</button>

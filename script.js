@@ -15,10 +15,13 @@ $(() => {
     billsPer = parseFloat($("#bills-budget-input").val().replace(/[^0-9.-]+/g, '')) / 100;
     checkPercentage = entertainmentPer + foodPer + clothingPer + billsPer;
     username = $("#name-input").val();
-    if (checkPercentage > 1) {
+    if (checkPercentage !== 1) {
       $("#message-container").show();
-      $("#message-container").text("It looks like you've exceeded 100%.");
-    } else {
+      $("#message-container").text("It looks like you're budgets don't equal 100%. Take another look!");
+    } else if ($("#total-budget-input").val()==="" || $("#entertainment-budget-input").val()==="" || $("#food-budget-input").val()==="" || $("#clothing-budget-input").val()==="" || $("#bills-budget-input").val()==="")  {
+      $("#message-container").show();
+      $("#message-container").text("Please fill in all budget details.");
+    }else {
       myBudget = new Budget(totBudget, entertainmentPer, foodPer, clothingPer, billsPer);
       $("#start-container").hide();
       $("#main-screen-container").show();
