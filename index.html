@@ -10,6 +10,7 @@
 	<script src="script.js" type=""="text/javascript"></script>
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id="welcome-container">
@@ -43,16 +44,20 @@
 				<p id="current-budget"></p>
 			</div>
 			<div id="budget-bar-container">
-				<div id="entertainment-bar">
+				<div class="tooltip" id="entertainment-bar">
+					<span class="tooltip-text" id="entertainment-tooltip">Entertainment</span>
 					<div id="entertainment-bar-progress"></div>
 				</div>
-				<div id="food-bar">
+				<div class="tooltip" id="food-bar">
+					<span class="tooltip-text" id="food-tooltip">Food</span>
 					<div id="food-bar-progress"></div>
 				</div>
-				<div id="clothing-bar">
+				<div class="tooltip" id="clothing-bar">
+					<span class="tooltip-text" id="clothing-tooltip">Clothing</span>
 					<div id="clothing-bar-progress"></div>
 				</div>
-				<div id="bills-bar">
+				<div class="tooltip" id="bills-bar">
+					<span class="tooltip-text" id="bills-tooltip">Bills</span>
 					<div id="bills-bar-progress"></div>
 				</div>
 			</div>

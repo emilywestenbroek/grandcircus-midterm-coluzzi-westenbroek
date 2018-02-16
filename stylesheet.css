@@ -1,3 +1,7 @@
+body {
+  background-color: #ecf9e8;
+}
+
 h1, h2 {
   font-family: "Ubuntu", sans-serif;
 }
@@ -32,7 +36,7 @@ input {
   margin: 50px auto;
   border: solid;
   border-radius: 5px;
-  border-color: #A4D555;
+  border-color: #eee;
   border-width: 5px;
   max-width: 80%;
   min-width: 275px;
@@ -74,7 +78,7 @@ input {
 
 #add-expense-button, #initialize-budget-button {
   margin: 10px auto;
-  background-color: #A4D555;
+  background-color: #eee;
   height: 50px;
   width: 150px;
   border-radius: 5px;
@@ -130,6 +134,35 @@ input {
 #bills-bar-progress {
   background-color: #FF5992;
   height: 100px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #eee;
+  color: #000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 #current-budget {

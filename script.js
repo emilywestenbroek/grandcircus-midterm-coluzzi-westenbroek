@@ -24,7 +24,7 @@ $(() => {
       $("#main-screen-container").show();
       $("#expense-container").show();
       $("#username-display").text(`${username}`);
-      $("#current-budget").text(`$${myBudget.remainder}/$${myBudget.totBudget}`);
+      $("#current-budget").text(`You currently have $${myBudget.remainder} left of your $${myBudget.totBudget} monthly budget.`);
       calculateBudgetBar();
     }
   });
@@ -51,6 +51,11 @@ function calculateBudgetBar(){
   $("#food-bar-progress").css("width",`${(myBudget.food.currentBudget / myBudget.food.intBudget) * 100}%`);
   $("#clothing-bar-progress").css("width",`${(myBudget.clothing.currentBudget / myBudget.clothing.intBudget) * 100}%`);
   $("#bills-bar-progress").css("width",`${(myBudget.bills.currentBudget / myBudget.bills.intBudget) * 100}%`);
+
+  $("#entertainment-tooltip").text(`Entertainment - $${(myBudget.entertainment.currentBudget)} / ${(myBudget.entertainment.intBudget)}`);
+  $("#food-tooltip").text(`Food - $${(myBudget.food.currentBudget)} / ${(myBudget.food.intBudget)}`);
+  $("#clothing-tooltip").text(`Clothing - $${(myBudget.clothing.currentBudget)} / ${(myBudget.clothing.intBudget)}`);
+  $("#bills-tooltip").text(`Bills - $${(myBudget.bills.currentBudget)} / ${(myBudget.bills.intBudget)}`);
 }
 
 function expenseInputReset() {
