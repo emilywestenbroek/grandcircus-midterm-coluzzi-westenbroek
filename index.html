@@ -14,27 +14,30 @@
 </head>
 <body>
 	<div id="welcome-container">
-		<h1>Welcome <span id="username-display"></span></h1>
+		<h1 class="welcome-header">Welcome <span id="username-display"></span></h1>
 		<h4 id="message-container">Please Enter Your Expense Details Below</h4>
 	</div>
 	<section id="start-container">
 		<div id="start-title-container">
 			<h1 class="new-budget-headline">Create a Budget!</h1>
 		</div>
-		<div id="start-input-container">
+		<!-- <div id="start-input-container"> -->
 			<div id="name-and-total-container">
 				<label for="name-input">Name<input id="name-input" type="text" placeholder="John Doe"></label>
-				<label for="total-budget-input">Total Monthly Budget<input id="total-budget-input" type="text" placeholder="2000.00"></label>
+				<label for="total-budget-input">Monthly Budget<input id="total-budget-input" type="text" placeholder="2000.00"></label>
 			</div>
-			<div id="percent-input-container">
-				<label for="entertainment-budget-input">Entertainment<input id="entertainment-budget-input" type="text" value="25"></label>
-				<label for="food-budget-input">Food<input id="food-budget-input" type="text" value="25"></label>
+			<div id="percent-input-one">
+				<label for="entertainment-budget-input">Entertainment</br>
+					<input id="entertainment-budget-input" type="text" value="25"></label>
 				<label for="clothing-budget-input">Clothing<input id="clothing-budget-input" type="text" value="25"></label>
+			</div>
+			<div id="percent-input-two">
+				<label for="food-budget-input">Food<input id="food-budget-input" type="text" value="25"></label>
 				<label for="bills-budget-input">Bills<input id="bills-budget-input" type="text" value="25"></label>
 			</div>
-			<div id="start-button-container">
-				<button id="initialize-budget-button"type="button" name="button">Create Budget!</button>
-			</div>
+		<!-- </div> -->
+		<div id="start-button-container">
+			<button id="initialize-budget-button"type="button" name="button">Create Budget!</button>
 		</div>
 	</section>
 	<section id="main-screen-container">

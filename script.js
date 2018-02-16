@@ -82,5 +82,4 @@ function addButton(category, description, amount) {
 $(document).ready(function() {
   $("#expense-container").hide();
   $("#main-screen-container").hide();
-  $("#message-container").hide();
 });

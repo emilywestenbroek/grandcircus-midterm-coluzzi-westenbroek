@@ -15,18 +15,51 @@ input {
   padding: 10px;
 }
 
-#welcome-container, #current-budget-headline,
+#current-budget-headline,
 #current-display-container, #start-title-container,
 #start-button-container, #recent-transactions-container{
   display: flex;
   justify-content: center;
 }
 
+#welcome-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-header {
+  align-self: center;
+}
+
+#message-container {
+  align-self: center;
+}
+
+#name-and-total-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 #start-input-container {
+  display: flex;
+  flex-wrap: wrap;
   height: 400px;
   margin: 10px 10%;
 }
 
+#percent-input-one {
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+#percent-input-two {
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
 
 #expense-container{
   display: none;
@@ -41,11 +74,6 @@ input {
   max-width: 80%;
   min-width: 275px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-}
-
-/* Should this be #message-container? */
-#expense-error-message {
-  display: none;
 }
 
 #expense-headline-container, #expense-input-container {
@@ -96,17 +124,20 @@ input {
   height: 100px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: white;
 }
 
 #food-bar {
   border: solid 5px #A4D555;
   height: 100px;
   background-color: white;
+  background-color: white;
 }
 
 #clothing-bar {
   border: solid 5px #841983;
   height: 100px;
+  background-color: white;
 }
 
 #bills-bar{
@@ -114,6 +145,7 @@ input {
   height: 100px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: white;
 }
 
 #entertainment-bar-progress {
@@ -168,4 +200,9 @@ input {
 #current-budget {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
+}
+
+#recent-transactions-container {
+  display: flex;
+  flex-direction: column;
 }
